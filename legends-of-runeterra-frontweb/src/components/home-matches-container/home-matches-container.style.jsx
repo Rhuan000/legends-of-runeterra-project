@@ -6,11 +6,11 @@ export const HomeMatchesContainerDivStyled = styled.div`
     height: 50vh;
     min-height: 450px;
     border: 0px;
-    width: 80vw;
+    width: 95vw;
     position: absolute;
-    overflow: scroll;
+    overflow-x: scroll;
     border-radius: 5px;
-    left: 10%;
+    left: 2.5%;
     z-index: 1;
     top: 25%;
 `

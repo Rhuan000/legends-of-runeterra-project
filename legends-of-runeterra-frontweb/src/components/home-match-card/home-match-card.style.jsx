@@ -4,13 +4,13 @@ import { RegionsIcon } from "../regions-icon/regions-icon.component"
 export const HomeMatchCardStyled = styled.div`
     position: relative;
     display: flex;
-    min-height: 100.2px;
+    min-height: 135px;
     margin: 0.8rem;
     background-color: rgb(0,0,0, 1);
     border: 1px solid #3559E0;
-
     margin-bottom: 0.01rem;
     border-radius: 5px;
+    overflow: hidden;
 
     &:hover{
         background-color: rgb(10, 10, 10,1);
@@ -57,7 +57,8 @@ export const MatchCardSpanX = styled.span`
 export const MatchCardPlayerDiv = styled.div`
     position: relative;
     display: flex;
-    min-height: 100%; 
+    min-height: 100%;
+    max-height: 135px;
     width: 50%;
     align-items: center;
     justify-content: center;

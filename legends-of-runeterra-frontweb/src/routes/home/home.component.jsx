@@ -6,20 +6,18 @@ import { useContext } from "react"
 import { HomeMatchesContainer } from "../../components/home-matches-container/home-matches-container.component"
 
 export function Home(){
-    const historyContext = useContext(HistoryContext)
-
+    const historyContext = useContext(HistoryContext).currentHistory
+    console.log(historyContext)
     
 
     return(
         <HomeBackground>
             <HomeHeader/>
-            <HomeForm/>
             {
-                historyContext.currentHistory && (
-                    <HomeMatchesContainer></HomeMatchesContainer>
-                )
-
-            }
+                historyContext ? <HomeMatchesContainer></HomeMatchesContainer> : <HomeForm/> 
+                    
+             }
+            
         </HomeBackground>
     )
 }

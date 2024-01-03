@@ -8,6 +8,7 @@ export function HomeMatchesContainer(){
     const data = historyContext.currentHistory 
 
     const histories = historyContext.formatedHistory
+    console.log(histories)
 
     return (
         <>
